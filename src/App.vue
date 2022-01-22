@@ -1,15 +1,21 @@
 <template>
-  <Search />
+  <MainSearch />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Search from "./components/Search.vue";
+import MainSearch from "./components/MainSearch.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    Search,
-  },
+    MainSearch,
+},
 });
 </script>
+
+<style>
+* {
+  font-family: "SuperLegendBoy";
+}
+</style>

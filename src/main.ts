@@ -1,7 +1,11 @@
 import { h, createApp } from "vue";
 import singleSpaVue from "single-spa-vue";
+import { createPinia } from "pinia";
 
 import App from "./App.vue";
+
+import "./index.css";
+import "./assets/tailwind.css";
 
 const vueLifecycles = singleSpaVue({
   createApp,
@@ -19,6 +23,9 @@ const vueLifecycles = singleSpaVue({
       });
     },
   },
+  handleInstance: (app) => {
+    app.use(createPinia());
+  }
 });
 
 export const bootstrap = vueLifecycles.bootstrap;
