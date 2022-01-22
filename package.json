@@ -1,12 +1,12 @@
 {
-  "name": "@mf-poke/mf-poke-search",
+  "name": "@mf-poke/search",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port=3000",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "serve:standalone": "vue-cli-service serve --mode standalone"
+    "serve:standalone": "vue-cli-service serve --mode standalone --port=3000"
   },
   "dependencies": {
     "core-js": "^3.6.5",
