@@ -2,14 +2,14 @@
   <Search />
 </template>
 
-<script>
-import Search from './components/Search.vue'
+<script lang="ts">
+import { defineComponent } from "vue";
+import Search from "./components/Search.vue";
 
-export default {
-  name: 'App',
+export default defineComponent({
+  name: "App",
   components: {
-    Search
-  }
-}
+    Search,
+  },
+});
 </script>
-

@@ -1,4 +1,3 @@
 <template>
-    <div>This is Search Dashboard</div>
+    <div>This is Search component</div>
 </template>
-
